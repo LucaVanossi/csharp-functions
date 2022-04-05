@@ -1,10 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-int[] ArrayEsercizio = { 2, 6, 7, 5, 3, 9 };
+Console.WriteLine("Inserisci i numeri che vuoi siano contenuti nell'array ");
 
-//  int numerivoluti = 5; 
-//  int [] ArrayEsercizio = new int [numerivoluti];
-// for ....
+int numeriInseririUtente = int.Parse(Console.ReadLine());
+int [] ArrayEsercizio = new int [numeriInseririUtente];
+
+for (int i = 0; i < numeriInseririUtente; i++) 
+{
+    int numero = int.Parse(Console.ReadLine());
+    ArrayEsercizio [i] = numero;
+} 
+
 
 StampaArrayInteri(ArrayEsercizio);
 StampaArrayInteri(ElevaArrayAlQuadrato(ArrayEsercizio));
@@ -42,9 +48,6 @@ int Quadrato(int numero)
     int risultato = (numero * numero);
     return risultato;
 }
-
-/*int NumeroFinale = Quadrato(5);
-Console.WriteLine(NumeroFinale);*/
 
 
 
