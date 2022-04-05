@@ -2,6 +2,10 @@
 
 int[] ArrayEsercizio = { 2, 6, 7, 5, 3, 9 };
 
+//  int numerivoluti = 5; 
+//  int [] ArrayEsercizio = new int [numerivoluti];
+// for ....
+
 StampaArrayInteri(ArrayEsercizio);
 StampaArrayInteri(ElevaArrayAlQuadrato(ArrayEsercizio));
 
@@ -39,15 +43,18 @@ int Quadrato(int numero)
     return risultato;
 }
 
+/*int NumeroFinale = Quadrato(5);
+Console.WriteLine(NumeroFinale);*/
+
 
 
 int[] ElevaArrayAlQuadrato(int[] array)
 {
-    int [] CopiaArray = (int[])array.Clone();
-    
+    int[] CopiaArray = (int[])array.Clone();
+
     for (int i = 0; i < array.Length; i++)
     {
-        CopiaArray [i] = Quadrato(CopiaArray[i]);
+        CopiaArray[i] = Quadrato(CopiaArray[i]);
     }
     return CopiaArray;
 }
@@ -63,8 +70,4 @@ int sommaElementiArray(int[] array)
     }
     return somma;
 }
-
-
-
-
 
